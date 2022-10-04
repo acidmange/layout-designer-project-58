@@ -44,3 +44,18 @@
   --sections-text-align: center;
   --sections-margin: 100px 0;
 }
+
+.background {
+  position: relative;
+}
+
+.background::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
