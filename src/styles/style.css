@@ -35,21 +35,97 @@
 
   /* Headers */
   --headers-line-height: 1.2em;
+  --headers-font-weight: normal;
   --headers-h1-size: 72px;
   --headers-h2-size: 60px;
   --headers-h3-size: 34px;
 
   /* Sections */
   --sections-max-width: 1110px;
-  --sections-text-align: center;
-  --sections-margin: 100px 0;
+  --sections-justify-content: center;
+  --sections-padding: 100px 0;
 }
 
-.background {
+/* Main CSS */
+
+.body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.f-container {
+  display: flex;
+}
+
+.header {}
+
+.header__bottom-part {
+  margin-top: 200px;
+}
+
+.header__image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+  z-index: -1;
+}
+
+.header__left-side {
+  margin-right: 15px;
+  width: 50%;
+}
+
+.header__link {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.header__right-side {
+  margin-left: 15px;
+  width: 50%;
+}
+
+.header__top-part {}
+
+.headline {
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  line-height: var(--headers-line-height);
+  font-size: var(--headers-h1-size);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  z-index: 1;
+  color: var(--color-main);
+}
+
+.headline_color_dark {
+  color: var(--color-dark);
+}
+
+.link {
+  padding: 12px 24px;
+  text-decoration: 0;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fonts-size);
+  line-height: var(--fonts-line-height);
+  font-family: var(--fonts-family-open-sans);
+}
+
+.link:hover {
+  background-color: #EA7600;
+}
+
+.main-background {
   position: relative;
 }
 
-.background::before {
+.main-background::before {
   position: absolute;
   content: "";
   background-image: url("../../images/background.png");
@@ -58,4 +134,27 @@
   width: 100%;
   height: 100%;
   opacity: 0.1;
+  z-index: -2;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.section__content {
+  position: relative;
+  max-width: var(--sections-max-width);
+  padding: var(--sections-padding);
+  justify-content: var(--sections-justify-content);
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: var(--fonts-family-open-sans);
+  font-size: var(--fonts-size);
+  font-weight: 400;
+  line-height: var(--fonts-line-height);
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
