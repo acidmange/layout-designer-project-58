@@ -55,6 +55,22 @@
   box-sizing: border-box;
 }
 
+.button {
+  padding: 12px 24px;
+  text-decoration: 0;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fonts-size);
+  line-height: var(--fonts-line-height);
+  font-family: var(--fonts-family-open-sans);
+}
+
+.button:hover {
+  background-color: #EA7600;
+}
+
 .f-container {
   display: flex;
 }
@@ -77,24 +93,16 @@
   font-size: var(--headers-h2-size);
 }
 
+.headline_size_52 {
+  font-size: 52px;
+}
+
 .headline_color_dark {
   color: var(--color-dark);
 }
 
-.link {
-  padding: 12px 24px;
-  text-decoration: 0;
+.headline_color_white {
   color: var(--color-white);
-  background-color: var(--color-main);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: var(--fonts-size);
-  line-height: var(--fonts-line-height);
-  font-family: var(--fonts-family-open-sans);
-}
-
-.link:hover {
-  background-color: #EA7600;
 }
 
 .main-background {
@@ -127,6 +135,10 @@
   justify-content: var(--sections-justify-content);
   flex-direction: column;
   margin: 0 auto;
+}
+
+.section__content_padding_top {
+  padding-top: 200px;
 }
 
 .section__content_centered {
@@ -174,7 +186,7 @@
   width: 50%;
 }
 
-.header__link {
+.header__button {
   display: inline-block;
   margin-top: 30px;
 }
@@ -204,4 +216,54 @@
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   position: relative;
   top: 100px;
+}
+
+/* Squares Section CSS */
+
+.squares-container {
+  row-gap: 20px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.squares-container__header {
+  max-width: 350px;
+}
+
+.squares-link {
+  text-decoration: 0;
+  background-color: var(--color-bright);
+  padding: 24px;
+  max-width: 302px;
+}
+
+.squares-link__header {
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  font-size: 34px;
+  color: var(--color-main);
+  line-height: var(--headers-line-height);
+  margin: 0;
+  padding: 0;
+}
+
+.squares-link__number {
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  color: var(--color-main-dark);
+  font-size: 64px;
+  padding-bottom: 64px;
+  line-height: 1;
+  margin: 0;
+}
+
+.squares-link__text {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 0;
+  font-family: var(--fonts-family-open-sans);
+  font-weight: normal;
+  font-size: var(--fonts-size);
+  line-height: var(--fonts-line-height);
+  color: var(--color-dark);
 }
