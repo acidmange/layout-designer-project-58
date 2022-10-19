@@ -497,3 +497,64 @@ Thats why I'd better use this CSS to pass this section tests...
 .novelty__top-part {
   column-gap: 30px;
 }
+
+/* Depreciation Section CSS */
+
+.depreciation__bottom-part {
+  flex-direction: column;
+}
+
+.depreciation__explanation {
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  line-height: var(--headers-line-height);
+  color: var(--color-white);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.depreciation__header {
+  margin: 0;
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  line-height: var(--headers-line-height);
+  color: var(--color-white);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.depreciation__headline {
+  margin: 0;
+  font-family: var(--fonts-family-neucha);
+  font-weight: var(--headers-font-weight);
+  font-size: 24px;
+  line-height: var(--headers-line-height);
+  color: var(--color-white-shade);
+}
+
+.depreciation__image {
+  vertical-align: middle;
+}
+
+.depreciation__texts {
+  column-gap: 30px;
+}
+
+.depreciation__texts-headline {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  color: var(--color-brown);
+  background-color: var(--color-white);
+  text-transform: uppercase;
+  font-family: var(--fonts-family-open-sans);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: var(--headers-line-height);
+}
+
+.depreciation__top-part {
+  column-gap: 30px;
+}
