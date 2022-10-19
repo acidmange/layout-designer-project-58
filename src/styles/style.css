@@ -158,6 +158,10 @@
   padding-top: 0;
 }
 
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
 .pos_relative {
   position: relative;
 }
@@ -227,7 +231,6 @@
 }
 
 .video {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   position: relative;
   top: 100px;
 }
