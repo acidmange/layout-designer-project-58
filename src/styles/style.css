@@ -94,6 +94,10 @@
   font-size: var(--headers-h2-size);
 }
 
+.headline_size_h3 {
+  font-size: var(--headers-h3-size);
+}
+
 .headline_size_52 {
   font-size: 52px;
 }
