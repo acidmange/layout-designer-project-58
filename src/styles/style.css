@@ -167,6 +167,20 @@
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
 .pos_relative {
   position: relative;
 }
@@ -178,6 +192,10 @@
   line-height: var(--fonts-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.text_size_14px {
+  font-size: 14px;
 }
 
 .text_color_bootstrap_dark {
@@ -197,8 +215,6 @@
 }
 
 /* Header CSS */
-
-.header {}
 
 .header__bottom-part {
   margin-top: 200px;
@@ -226,8 +242,6 @@
   margin-left: 15px;
   width: 50%;
 }
-
-.header__top-part {}
 
 /* Video Section CSS */
 
@@ -622,4 +636,85 @@ Thats why I'd better use this CSS to pass this section tests...
 
 .planning__top-part {
   column-gap: 30px;
+}
+
+/* Footer Section CSS */
+
+.footer__headline {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.footer__top {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.footer__left {
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer__right {
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer__wrapper {
+  width: 100%;
+}
+
+.footer__input {
+  margin: 0;
+  border: 0;
+  height: 50px;
+  padding: 15px;
+  width: calc(100% - 70px);
+  box-sizing: border-box;
+}
+
+.footer__button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 70px;
+  height: 50px;
+  text-indent: -9999em;
+  text-transform: uppercase;
+  background-color: var(--color-main);
+  position: relative;
+  z-index: 0;
+}
+
+.footer__button::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/send.svg");
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+}
+
+.footer__agreement {
+  font-size: 12px;
+}
+
+.footer__agreement-link:visited {
+  color: var(--color-white);
+}
+
+.footer__form-headline {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.footer__bottom {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer__bottom-reference {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
