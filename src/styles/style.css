@@ -442,7 +442,7 @@ Thats why I'd better use this CSS to pass this section tests...
 
 /* For Optimization Section Tests */
 
-#premature-optimization>.section__content>div[style] {
+#premature-optimization> .section__content> div[style] {
   font-family: var(--fonts-family-open-sans);
   font-size: var(--fonts-size);
   line-height: var(--fonts-line-height);
