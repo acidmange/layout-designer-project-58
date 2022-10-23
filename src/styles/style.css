@@ -1,5 +1,3 @@
-/* Project fonts */
-
 @font-face {
   /* sans serif */
   font-family: "Open Sans";
@@ -8,7 +6,7 @@
 
 @font-face {
   /* sans serif */
-  font-family: "Neucha";
+  font-family: Neucha;
   src: url("../fonts/Neucha-Regular.ttf") format("truetype");
 }
 
@@ -28,11 +26,11 @@
   --color-bootstrap-dark: #212529;
 
   /* Fonts */
-  --fonts-family-neucha: "Neucha", sans-serif;
+  --fonts-family-neucha: neucha, sans-serif;
   --fonts-family-open-sans: "Open Sans", sans-serif;
   --fonts-size: 16px;
   --fonts-line-height: 1.6em;
-  --fonts-color: #2A2626;
+  --fonts-color: #2a2626;
 
   /* Headers */
   --headers-line-height: 1.2em;
@@ -50,26 +48,28 @@
 /* Main CSS */
 
 .body {
-  overflow-x: hidden;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .button {
   padding: 12px 24px;
-  text-decoration: 0;
+
   color: var(--color-white);
-  background-color: var(--color-main);
-  text-transform: uppercase;
   font-weight: 700;
   font-size: var(--fonts-size);
-  line-height: var(--fonts-line-height);
   font-family: var(--fonts-family-open-sans);
+  line-height: var(--fonts-line-height);
+  text-transform: uppercase;
+  text-decoration: 0;
+
+  background-color: var(--color-main);
 }
 
 .button:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
 .f-container {
@@ -77,13 +77,15 @@
 }
 
 .headline {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  line-height: var(--headers-line-height);
+  z-index: 1;
+
   margin-block-start: 0;
   margin-block-end: 0;
-  z-index: 1;
+
   color: var(--color-main);
+  font-weight: var(--headers-font-weight);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .headline_size_h1 {
@@ -111,13 +113,15 @@
 }
 
 .bright-background {
-  background-color: var(--color-bright);
   z-index: 0;
+
+  background-color: var(--color-bright);
 }
 
 .brown-background {
-  background-color: var(--color-brown);
   z-index: 0;
+
+  background-color: var(--color-brown);
 }
 
 .main-background {
@@ -126,14 +130,18 @@
 
 .main-background::before {
   position: absolute;
-  content: "";
+  z-index: -2;
+
+  width: 100%;
+  height: 100%;
+
   background-image: url("../../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+
   opacity: 0.1;
-  z-index: -2;
+
+  content: "";
 }
 
 .main-dark-background {
@@ -145,11 +153,13 @@
 }
 
 .section__content {
-  max-width: var(--sections-max-width);
-  padding: var(--sections-padding);
-  justify-content: var(--sections-justify-content);
   flex-direction: column;
+  justify-content: var(--sections-justify-content);
+
+  max-width: var(--sections-max-width);
+
   margin: 0 auto;
+  padding: var(--sections-padding);
 }
 
 .section__content_padding_top {
@@ -158,9 +168,11 @@
 
 .section__content_centered {
   align-items: center;
-  text-align: center;
-  padding-bottom: 0;
+
   padding-top: 0;
+  padding-bottom: 0;
+
+  text-align: center;
 }
 
 .shadow {
@@ -186,12 +198,13 @@
 }
 
 .text {
-  font-family: var(--fonts-family-open-sans);
-  font-size: var(--fonts-size);
-  font-weight: 400;
-  line-height: var(--fonts-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  font-weight: 400;
+  font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
+  line-height: var(--fonts-line-height);
 }
 
 .text_size_14px {
@@ -222,15 +235,17 @@
 
 .header__image {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -270px;
   z-index: -1;
+
+  height: 525px;
 }
 
 .header__left-side {
-  margin-right: 15px;
   width: 50%;
+
+  margin-right: 15px;
 }
 
 .header__button {
@@ -239,8 +254,9 @@
 }
 
 .header__right-side {
-  margin-left: 15px;
   width: 50%;
+
+  margin-left: 15px;
 }
 
 /* Video Section CSS */
@@ -253,6 +269,7 @@
 .text_margin_video {
   position: relative;
   top: 100px;
+
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -265,9 +282,11 @@
 /* Squares Section CSS */
 
 .squares-container {
-  row-gap: 20px;
-  column-gap: 30px;
   flex-wrap: wrap;
+
+  row-gap: 20px;
+
+  column-gap: 30px;
 }
 
 .squares-container__header {
@@ -275,41 +294,46 @@
 }
 
 .squares-link {
-  text-decoration: 0;
-  background-color: var(--color-bright);
-  padding: 24px;
   max-width: 302px;
+  padding: 24px;
+
+  text-decoration: 0;
+
+  background-color: var(--color-bright);
 }
 
 .squares-link__header {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: 34px;
-  color: var(--color-main);
-  line-height: var(--headers-line-height);
   margin: 0;
   padding: 0;
+
+  color: var(--color-main);
+  font-weight: var(--headers-font-weight);
+  font-size: 34px;
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .squares-link__number {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  color: var(--color-main-dark);
-  font-size: 64px;
-  padding-bottom: 64px;
-  line-height: 1;
   margin: 0;
+  padding-bottom: 64px;
+
+  color: var(--color-main-dark);
+  font-weight: var(--headers-font-weight);
+  font-size: 64px;
+  font-family: var(--fonts-family-neucha);
+  line-height: 1;
 }
 
 .squares-link__text {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 0;
-  font-family: var(--fonts-family-open-sans);
+
+  color: var(--color-dark);
   font-weight: normal;
   font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--fonts-line-height);
-  color: var(--color-dark);
 }
 
 /* Ikea Section CSS */
@@ -319,33 +343,36 @@
 }
 
 .ikea__explanation {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-dark);
   margin-top: 30px;
   margin-bottom: 0;
+
+  color: var(--color-dark);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .ikea__header {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-dark);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  color: var(--color-dark);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .ikea__headline {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
+
+  color: var(--color-dark-shade);
   font-weight: var(--headers-font-weight);
   font-size: 24px;
+  font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
-  color: var(--color-dark-shade);
 }
 
 .ikea__image {
@@ -360,13 +387,15 @@
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--color-white);
-  background-color: var(--color-brown);
-  text-transform: uppercase;
-  font-family: var(--fonts-family-open-sans);
   font-weight: 700;
   font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--headers-line-height);
+  text-transform: uppercase;
+
+  background-color: var(--color-brown);
 }
 
 .ikea__top-part {
@@ -380,33 +409,36 @@
 }
 
 .optimization__explanation {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-white);
   margin-top: 30px;
   margin-bottom: 0;
+
+  color: var(--color-white);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .optimization__header {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-white);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  color: var(--color-white);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .optimization__headline {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
+
+  color: var(--color-white-shade);
   font-weight: var(--headers-font-weight);
   font-size: 24px;
+  font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
-  color: var(--color-white-shade);
 }
 
 .optimization__image {
@@ -421,20 +453,22 @@
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--color-brown);
-  background-color: var(--color-white);
-  text-transform: uppercase;
-  font-family: var(--fonts-family-open-sans);
   font-weight: 700;
   font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--headers-line-height);
+  text-transform: uppercase;
+
+  background-color: var(--color-white);
 }
 
 .optimization__top-part {
   column-gap: 30px;
 }
 
-/* 
+/*
 I don't like the idea of using global styles like
 h2 {}, ul {}, ul > li {} ... and so on
 Thats why I'd better use this CSS to pass this section tests...
@@ -442,17 +476,17 @@ Thats why I'd better use this CSS to pass this section tests...
 
 /* For Optimization Section Tests */
 
-#premature-optimization> .section__content> div[style] {
-  font-family: var(--fonts-family-open-sans);
+#premature-optimization > .section__content > div[style] {
   font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--fonts-line-height);
 }
 
-#premature-optimization>.section__content>div[style]>h2 {
+#premature-optimization > .section__content > div[style] > h2 {
   color: var(--color-main);
+  font-weight: var(--headers-font-weight);
   font-size: var(--headers-h2-size);
   font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
 }
 
 /* Novelty Section CSS */
@@ -462,33 +496,36 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .novelty__explanation {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  line-height: var(--headers-line-height);
-  color: var(--fonts-color);
   margin-top: 30px;
   margin-bottom: 0;
+
+  color: var(--fonts-color);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .novelty__header {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-dark);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  color: var(--color-dark);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .novelty__headline {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
+
+  color: var(--color-dark-shade);
   font-weight: var(--headers-font-weight);
   font-size: 24px;
+  font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
-  color: var(--color-dark-shade);
 }
 
 .novelty__image {
@@ -503,13 +540,15 @@ Thats why I'd better use this CSS to pass this section tests...
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--color-white);
-  background-color: var(--color-brown);
-  text-transform: uppercase;
-  font-family: var(--fonts-family-open-sans);
   font-weight: 700;
   font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--headers-line-height);
+  text-transform: uppercase;
+
+  background-color: var(--color-brown);
 }
 
 .novelty__top-part {
@@ -523,33 +562,36 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .depreciation__explanation {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-white);
   margin-top: 30px;
   margin-bottom: 0;
+
+  color: var(--color-white);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .depreciation__header {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-white);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  color: var(--color-white);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .depreciation__headline {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
+
+  color: var(--color-white-shade);
   font-weight: var(--headers-font-weight);
   font-size: 24px;
+  font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
-  color: var(--color-white-shade);
 }
 
 .depreciation__image {
@@ -564,13 +606,15 @@ Thats why I'd better use this CSS to pass this section tests...
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--color-brown);
-  background-color: var(--color-white);
-  text-transform: uppercase;
-  font-family: var(--fonts-family-open-sans);
   font-weight: 700;
   font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--headers-line-height);
+  text-transform: uppercase;
+
+  background-color: var(--color-white);
 }
 
 .depreciation__top-part {
@@ -584,33 +628,36 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .planning__explanation {
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  line-height: var(--headers-line-height);
-  color: var(--fonts-color);
   margin-top: 30px;
   margin-bottom: 0;
+
+  color: var(--fonts-color);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .planning__header {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  line-height: var(--headers-line-height);
-  color: var(--color-dark);
   margin-block-start: 0;
   margin-block-end: 0;
+
+  color: var(--color-dark);
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
 }
 
 .planning__headline {
   margin: 0;
-  font-family: var(--fonts-family-neucha);
+
+  color: var(--color-dark-shade);
   font-weight: var(--headers-font-weight);
   font-size: 24px;
+  font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
-  color: var(--color-dark-shade);
 }
 
 .planning__image {
@@ -625,13 +672,15 @@ Thats why I'd better use this CSS to pass this section tests...
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--color-white);
-  background-color: var(--color-brown);
-  text-transform: uppercase;
-  font-family: var(--fonts-family-open-sans);
   font-weight: 700;
   font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
   line-height: var(--headers-line-height);
+  text-transform: uppercase;
+
+  background-color: var(--color-brown);
 }
 
 .planning__top-part {
@@ -646,18 +695,18 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .footer__top {
-  padding-left: 55px;
   padding-right: 55px;
+  padding-left: 55px;
 }
 
 .footer__left {
-  align-items: center;
   flex-grow: 1;
+  align-items: center;
 }
 
 .footer__right {
-  align-items: center;
   flex-grow: 1;
+  align-items: center;
 }
 
 .footer__wrapper {
@@ -665,35 +714,44 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .footer__input {
-  margin: 0;
-  border: 0;
-  height: 50px;
-  padding: 15px;
-  width: calc(100% - 70px);
   box-sizing: border-box;
+
+  width: calc(100% - 70px);
+  height: 50px;
+  margin: 0;
+  padding: 15px;
+
+  border: 0;
 }
 
 .footer__button {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  width: 70px;
-  height: 50px;
-  text-indent: -9999em;
-  text-transform: uppercase;
-  background-color: var(--color-main);
   position: relative;
   z-index: 0;
+
+  width: 70px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+  text-indent: -9999em;
+
+  background-color: var(--color-main);
+
+  border: 0;
 }
 
 .footer__button::before {
   position: absolute;
-  content: "";
-  background-image: url("../../images/send.svg");
-  left: calc(50% - 12px);
   top: calc(50% - 12px);
+  left: calc(50% - 12px);
+
   width: 24px;
   height: 24px;
+
+  background-image: url("../../images/send.svg");
+
+  content: "";
 }
 
 .footer__agreement {
@@ -705,12 +763,14 @@ Thats why I'd better use this CSS to pass this section tests...
 }
 
 .footer__form-headline {
-  font-size: 18px;
   margin-bottom: 9px;
+
+  font-size: 18px;
 }
 
 .footer__bottom {
   margin-top: 60px;
+
   text-align: center;
 }
 
