@@ -302,6 +302,10 @@
   background-color: var(--color-bright);
 }
 
+.squares-link:link {
+  text-decoration: none;
+}
+
 .squares-link:visited {
   text-decoration: none;
 }
