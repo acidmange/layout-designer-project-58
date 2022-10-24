@@ -308,6 +308,7 @@
 
 .squares-link:hover {
   text-decoration: none;
+
   background-color: var(--color-main);
 }
 
@@ -328,6 +329,7 @@
   font-size: 34px;
   font-family: var(--fonts-family-neucha);
   line-height: var(--headers-line-height);
+  text-decoration: 0;
 }
 
 .squares-link__number {
@@ -339,6 +341,7 @@
   font-size: 64px;
   font-family: var(--fonts-family-neucha);
   line-height: 1;
+  text-decoration: 0;
 }
 
 .squares-link__text {
@@ -351,6 +354,7 @@
   font-size: var(--fonts-size);
   font-family: var(--fonts-family-open-sans);
   line-height: var(--fonts-line-height);
+  text-decoration: 0;
 }
 
 /* Ikea Section CSS */
