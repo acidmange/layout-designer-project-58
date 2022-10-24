@@ -302,12 +302,21 @@
   background-color: var(--color-bright);
 }
 
+.squares-link:visited {
+  text-decoration: none;
+}
+
 .squares-link:hover {
+  text-decoration: none;
   background-color: var(--color-main);
 }
 
 .squares-link:hover > * {
   color: var(--color-white);
+}
+
+.squares-link:active {
+  text-decoration: none;
 }
 
 .squares-link__header {
