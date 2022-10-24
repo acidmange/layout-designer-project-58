@@ -293,12 +293,21 @@
 }
 
 .squares-link {
+  display: block;
   max-width: 302px;
   padding: 24px;
 
   text-decoration: 0;
 
   background-color: var(--color-bright);
+}
+
+.squares-link:hover {
+  background-color: var(--color-main);
+}
+
+.squares-link:hover > * {
+  color: var(--color-white);
 }
 
 .squares-link__header {
