@@ -55,16 +55,6 @@
 }
 
 .button {
-  padding: 12px 24px;
-
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: var(--fonts-size);
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--fonts-line-height);
-  text-transform: uppercase;
-  text-decoration: 0;
-
   background-color: var(--color-main);
 }
 
@@ -251,6 +241,15 @@
 .header__button {
   display: inline-block;
   margin-top: 30px;
+  padding: 12px 24px;
+
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
+  line-height: var(--fonts-line-height);
+  text-transform: uppercase;
+  text-decoration: 0;
 }
 
 .header__right-side {
@@ -735,8 +734,6 @@ Thats why I'd better use this CSS to pass this section tests...
 
   text-transform: uppercase;
   text-indent: -9999em;
-
-  background-color: var(--color-main);
 
   border: 0;
 }
