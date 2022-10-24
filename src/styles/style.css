@@ -697,39 +697,23 @@ Thats why I'd better use this CSS to pass this section tests...
 
 /* Footer Section CSS */
 
-.footer__headline {
-  margin-top: 55px;
-  margin-bottom: 55px;
+.footer__agreement {
+  font-size: 12px;
 }
 
-.footer__top {
-  padding-right: 55px;
-  padding-left: 55px;
+.footer__agreement-link:visited {
+  color: var(--color-white);
 }
 
-.footer__left {
-  flex-grow: 1;
-  align-items: center;
+.footer__bottom {
+  margin-top: 60px;
+
+  text-align: center;
 }
 
-.footer__right {
-  flex-grow: 1;
-  align-items: center;
-}
-
-.footer__wrapper {
-  width: 100%;
-}
-
-.footer__input {
-  box-sizing: border-box;
-
-  width: calc(100% - 70px);
-  height: 50px;
-  margin: 0;
-  padding: 15px;
-
-  border: 0;
+.footer__bottom-reference {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .footer__button {
@@ -760,27 +744,43 @@ Thats why I'd better use this CSS to pass this section tests...
   content: "";
 }
 
-.footer__agreement {
-  font-size: 12px;
-}
-
-.footer__agreement-link:visited {
-  color: var(--color-white);
-}
-
 .footer__form-headline {
   margin-bottom: 9px;
 
   font-size: 18px;
 }
 
-.footer__bottom {
-  margin-top: 60px;
-
-  text-align: center;
+.footer__headline {
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
-.footer__bottom-reference {
-  margin-top: 16px;
-  margin-bottom: 16px;
+.footer__input {
+  box-sizing: border-box;
+
+  width: calc(100% - 70px);
+  height: 50px;
+  margin: 0;
+  padding: 15px;
+
+  border: 0;
+}
+
+.footer__left {
+  flex-grow: 1;
+  align-items: center;
+}
+
+.footer__right {
+  flex-grow: 1;
+  align-items: center;
+}
+
+.footer__top {
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+.footer__wrapper {
+  width: 100%;
 }
