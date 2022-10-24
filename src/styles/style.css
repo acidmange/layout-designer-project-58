@@ -338,7 +338,7 @@
 
 .squares-link__number {
   margin: 0;
-  padding-bottom: 64px;
+  padding-bottom: 40px;
 
   color: var(--color-main-dark);
   font-weight: var(--headers-font-weight);
