@@ -378,9 +378,9 @@
   top: 100px;
 }
 
-/* Squares Section CSS */
+/* Navigation Section CSS */
 
-.squares-container {
+.navigation-container {
   flex-wrap: wrap;
 
   row-gap: 20px;
@@ -388,11 +388,11 @@
   column-gap: 30px;
 }
 
-.squares-container__header {
+.navigation-container__header {
   max-width: 350px;
 }
 
-.squares-link {
+.navigation-link {
   display: block;
   max-width: 302px;
   padding: 24px;
@@ -402,29 +402,29 @@
   background-color: var(--color-bright);
 }
 
-.squares-link:link {
+.navigation-link:link {
   text-decoration: none;
 }
 
-.squares-link:visited {
+.navigation-link:visited {
   text-decoration: none;
 }
 
-.squares-link:hover {
+.navigation-link:hover {
   text-decoration: none;
 
   background-color: var(--color-main);
 }
 
-.squares-link:hover > * {
+.navigation-link:hover > * {
   color: var(--color-white);
 }
 
-.squares-link:active {
+.navigation-link:active {
   text-decoration: none;
 }
 
-.squares-link__header {
+.navigation-link__header {
   margin: 0;
   padding: 0;
 
@@ -436,7 +436,7 @@
   text-decoration: 0;
 }
 
-.squares-link__number {
+.navigation-link__number {
   margin: 0;
   padding-bottom: 40px;
 
@@ -448,7 +448,7 @@
   text-decoration: 0;
 }
 
-.squares-link__text {
+.navigation-link__text {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 0;
