@@ -217,6 +217,106 @@
   background: var(--color-white);
 }
 
+/* Universal Bright-Dark Themes CSS */
+
+.universal__bottom-part {
+  flex-direction: column;
+}
+
+.universal__explanation {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h3-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
+}
+
+.universal__header {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  font-weight: var(--headers-font-weight);
+  font-size: var(--headers-h2-size);
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
+}
+
+.universal__headline {
+  margin: 0;
+
+  font-weight: var(--headers-font-weight);
+  font-size: 24px;
+  font-family: var(--fonts-family-neucha);
+  line-height: var(--headers-line-height);
+}
+
+.universal__image {
+  vertical-align: middle;
+}
+
+.universal__texts {
+  column-gap: 30px;
+}
+
+.universal__texts-headline {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--fonts-family-open-sans);
+  line-height: var(--headers-line-height);
+  text-transform: uppercase;
+}
+
+.universal__top-part {
+  column-gap: 30px;
+}
+
+/* Bright Theme CSS */
+
+.explanation_bright {
+  color: var(--color-dark);
+}
+
+.header_bright {
+  color: var(--color-dark);
+}
+
+.headline_bright {
+  color: var(--color-dark-shade);
+}
+
+.texts-headline_bright {
+  color: var(--color-white);
+
+  background-color: var(--color-brown);
+}
+
+/* Dark Theme CSS */
+
+.explanation_dark {
+  color: var(--color-white);
+}
+
+.header_dark {
+  color: var(--color-white);
+}
+
+.headline_dark {
+  color: var(--color-white-shade);
+}
+
+.texts-headline_dark {
+  color: var(--color-brown);
+
+  background-color: var(--color-white);
+}
+
 /* Header CSS */
 
 .header__bottom-part {
@@ -361,138 +461,6 @@
   text-decoration: 0;
 }
 
-/* Ikea Section CSS */
-
-.ikea__bottom-part {
-  flex-direction: column;
-}
-
-.ikea__explanation {
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  color: var(--color-dark);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.ikea__header {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  color: var(--color-dark);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.ikea__headline {
-  margin: 0;
-
-  color: var(--color-dark-shade);
-  font-weight: var(--headers-font-weight);
-  font-size: 24px;
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.ikea__image {
-  vertical-align: middle;
-}
-
-.ikea__texts {
-  column-gap: 30px;
-}
-
-.ikea__texts-headline {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--headers-line-height);
-  text-transform: uppercase;
-
-  background-color: var(--color-brown);
-}
-
-.ikea__top-part {
-  column-gap: 30px;
-}
-
-/* Optimization Section CSS */
-
-.optimization__bottom-part {
-  flex-direction: column;
-}
-
-.optimization__explanation {
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  color: var(--color-white);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.optimization__header {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  color: var(--color-white);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.optimization__headline {
-  margin: 0;
-
-  color: var(--color-white-shade);
-  font-weight: var(--headers-font-weight);
-  font-size: 24px;
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.optimization__image {
-  vertical-align: middle;
-}
-
-.optimization__texts {
-  column-gap: 30px;
-}
-
-.optimization__texts-headline {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--color-brown);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--headers-line-height);
-  text-transform: uppercase;
-
-  background-color: var(--color-white);
-}
-
-.optimization__top-part {
-  column-gap: 30px;
-}
-
 /*
 I don't like the idea of using global styles like
 h2 {}, ul {}, ul > li {} ... and so on
@@ -512,204 +480,6 @@ Thats why I'd better use this CSS to pass this section tests...
   font-weight: var(--headers-font-weight);
   font-size: var(--headers-h2-size);
   font-family: var(--fonts-family-neucha);
-}
-
-/* Novelty Section CSS */
-
-.novelty__bottom-part {
-  flex-direction: column;
-}
-
-.novelty__explanation {
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  color: var(--fonts-color);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.novelty__header {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  color: var(--color-dark);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.novelty__headline {
-  margin: 0;
-
-  color: var(--color-dark-shade);
-  font-weight: var(--headers-font-weight);
-  font-size: 24px;
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.novelty__image {
-  vertical-align: middle;
-}
-
-.novelty__texts {
-  column-gap: 30px;
-}
-
-.novelty__texts-headline {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--headers-line-height);
-  text-transform: uppercase;
-
-  background-color: var(--color-brown);
-}
-
-.novelty__top-part {
-  column-gap: 30px;
-}
-
-/* Depreciation Section CSS */
-
-.depreciation__bottom-part {
-  flex-direction: column;
-}
-
-.depreciation__explanation {
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  color: var(--color-white);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.depreciation__header {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  color: var(--color-white);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.depreciation__headline {
-  margin: 0;
-
-  color: var(--color-white-shade);
-  font-weight: var(--headers-font-weight);
-  font-size: 24px;
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.depreciation__image {
-  vertical-align: middle;
-}
-
-.depreciation__texts {
-  column-gap: 30px;
-}
-
-.depreciation__texts-headline {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--color-brown);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--headers-line-height);
-  text-transform: uppercase;
-
-  background-color: var(--color-white);
-}
-
-.depreciation__top-part {
-  column-gap: 30px;
-}
-
-/* Planning Section CSS */
-
-.planning__bottom-part {
-  flex-direction: column;
-}
-
-.planning__explanation {
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  color: var(--fonts-color);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h3-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.planning__header {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  color: var(--color-dark);
-  font-weight: var(--headers-font-weight);
-  font-size: var(--headers-h2-size);
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.planning__headline {
-  margin: 0;
-
-  color: var(--color-dark-shade);
-  font-weight: var(--headers-font-weight);
-  font-size: 24px;
-  font-family: var(--fonts-family-neucha);
-  line-height: var(--headers-line-height);
-}
-
-.planning__image {
-  vertical-align: middle;
-}
-
-.planning__texts {
-  column-gap: 30px;
-}
-
-.planning__texts-headline {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--headers-line-height);
-  text-transform: uppercase;
-
-  background-color: var(--color-brown);
-}
-
-.planning__top-part {
-  column-gap: 30px;
 }
 
 /* Footer Section CSS */
