@@ -102,6 +102,83 @@
   color: var(--color-white);
 }
 
+.pos_relative {
+  position: relative;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.section__content {
+  flex-direction: column;
+  justify-content: var(--sections-justify-content);
+
+  max-width: var(--sections-max-width);
+
+  margin: 0 auto;
+  padding: var(--sections-padding);
+}
+
+.section__content_centered {
+  align-items: center;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  text-align: center;
+}
+
+.section__content_padding_top {
+  padding-top: 200px;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+.text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  font-weight: 400;
+  font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
+  line-height: var(--fonts-line-height);
+}
+
+.text_color_bootstrap_dark {
+  color: var(--color-bootstrap-dark);
+}
+
+.text_color_dark {
+  color: var(--color-dark);
+}
+
+.text_color_white {
+  color: var(--color-white);
+}
+
+.text_size_14px {
+  font-size: 14px;
+}
+
+/* Backgrounds */
+
 .bright-background {
   z-index: 0;
 
@@ -136,81 +213,6 @@
 
 .main-dark-background {
   background: var(--color-main-dark);
-}
-
-.section {
-  margin: 0 auto;
-}
-
-.section__content {
-  flex-direction: column;
-  justify-content: var(--sections-justify-content);
-
-  max-width: var(--sections-max-width);
-
-  margin: 0 auto;
-  padding: var(--sections-padding);
-}
-
-.section__content_padding_top {
-  padding-top: 200px;
-}
-
-.section__content_centered {
-  align-items: center;
-
-  padding-top: 0;
-  padding-bottom: 0;
-
-  text-align: center;
-}
-
-.shadow {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-}
-
-.sr-only {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  padding: 0;
-
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border: 0;
-}
-
-.pos_relative {
-  position: relative;
-}
-
-.text {
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  font-weight: 400;
-  font-size: var(--fonts-size);
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--fonts-line-height);
-}
-
-.text_size_14px {
-  font-size: 14px;
-}
-
-.text_color_bootstrap_dark {
-  color: var(--color-bootstrap-dark);
-}
-
-.text_color_dark {
-  color: var(--color-dark);
-}
-
-.text_color_white {
-  color: var(--color-white);
 }
 
 .white-background {
@@ -323,6 +325,20 @@
   margin-top: 200px;
 }
 
+.header__button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--fonts-size);
+  font-family: var(--fonts-family-open-sans);
+  line-height: var(--fonts-line-height);
+  text-transform: uppercase;
+  text-decoration: 0;
+}
+
 .header__image {
   position: absolute;
   top: 55px;
@@ -336,20 +352,6 @@
   width: 50%;
 
   margin-right: 15px;
-}
-
-.header__button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: var(--fonts-size);
-  font-family: var(--fonts-family-open-sans);
-  line-height: var(--fonts-line-height);
-  text-transform: uppercase;
-  text-decoration: 0;
 }
 
 .header__right-side {
@@ -462,9 +464,7 @@
 }
 
 /*
-I don't like the idea of using global styles like
-h2 {}, ul {}, ul > li {} ... and so on
-Thats why I'd better use this CSS to pass this section tests...
+I don't like to use global styles too much, so...
 */
 
 /* For Optimization Section Tests */
