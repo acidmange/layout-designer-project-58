@@ -6,8 +6,6 @@
 
 ## Usage
 ```
-make install
-```
-```
-make deploy
+$ make install
+$ make deploy
 ```
